@@ -1,0 +1,40 @@
+{
+  "name": "@ssd-solar/dsync-service",
+  "version": "0.0.1",
+  "description": "The background service that does all the magic :tm:",
+  "main": "src/index.js",
+  "template": {
+    "extends": [
+      "node",
+      "eslint"
+    ]
+  },
+  "scripts": {
+    "test": "mocha -A",
+    "cov": "nyc mocha",
+    "lint": "eslint .",
+    "fix": "eslint --fix ."
+  },
+  "keywords": [
+    "configuration",
+    "config",
+    "sync",
+    "service",
+    "crdt"
+  ],
+  "author": "Maciej Krüger <mkg20001@gmail.com>",
+  "license": "MPL-2.0",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "@ssd-solar/tiny-ipc": "^0.0.1",
+    "peer-crdt": "^0.8.2"
+  },
+  "devDependencies": {
+    "eslint": "*",
+    "eslint-config-aegir-standalone": "*",
+    "eslint-config-oclif": "*",
+    "mkgs-tool": "^0.1.9",
+    "mocha": "*",
+    "nyc": "*"
+  }
+}
